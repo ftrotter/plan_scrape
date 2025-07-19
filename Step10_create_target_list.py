@@ -50,8 +50,8 @@ def read_csv_data(file_path):
 
 def main():
     # Input file paths
-    file1 = 'source_data/2025_partc_star_ratings.csv'
-    file2 = 'source_data/MA_Contract_directory_2025_06.csv'
+    file1 = './local_data/partc_source_data/2025_partc_star_ratings.csv'
+    file2 = './local_data/partc_source_data/MA_Contract_directory_2025_06.csv'
 
     # Output file path
     output_file = 'search_these.csv'
