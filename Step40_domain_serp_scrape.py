@@ -83,7 +83,7 @@ def main():
     domain_csv_path = "plan_domain_names.csv"
     
     # Create email_scrape_results directory if it doesn't exist
-    os.makedirs("email_scrape_results", exist_ok=True)
+    os.makedirs("./local_data/email_scrape_results", exist_ok=True)
     
     # Read the domain data
     print(f"Reading domain data from {domain_csv_path}...")
@@ -101,7 +101,7 @@ def main():
         
         # Create safe filename
         safe_domain = sanitize_filename(domain)
-        output_file = f"./email_scrape_results/{safe_domain}.search_results.json"
+        output_file = f"./local_data/email_scrape_results/{safe_domain}.search_results.json"
         
         # Check if we already have results for this domain
         if os.path.exists(output_file):
@@ -130,7 +130,7 @@ def main():
             print(f"  Error processing {domain}: {str(e)}")
     
     print("Domain-based search process completed.")
-    print(f"Results saved in ./email_scrape_results/ directory")
+    print(f"Results saved in ./local_data/email_scrape_results/ directory")
 
 if __name__ == "__main__":
     main()

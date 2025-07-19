@@ -228,9 +228,9 @@ def process_payer(payer: Dict[str, str], test_mode: bool = False, test_limit: in
     
     # Create output directory - use test directory when in test mode
     if test_mode:
-        output_dir = f"payer_slurp_test_results/{payer_stub}"
+        output_dir = f"./local_data/payer_slurp_test_results/{payer_stub}"
     else:
-        output_dir = f"payer_slurp_results/{payer_stub}"
+        output_dir = f"./local_data/payer_slurp_results/{payer_stub}"
     os.makedirs(output_dir, exist_ok=True)
     print(f"Created output directory: {output_dir}")
     

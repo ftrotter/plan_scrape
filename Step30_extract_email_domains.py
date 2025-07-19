@@ -62,7 +62,7 @@ def write_domains_to_csv(domains, output_file):
 
 def main():
     # Path to the input CSV file
-    input_csv_path = "source_data/MA_Contract_directory_2025_06.csv"
+    input_csv_path = "./local_data/partc_source_data/MA_Contract_directory_2025_06.csv"
     
     # Path to the output CSV file
     output_csv_path = "plan_domain_names.csv"

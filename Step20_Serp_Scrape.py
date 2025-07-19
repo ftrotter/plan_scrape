@@ -92,7 +92,7 @@ def search_serp_api(parent_org, api_key):
 def main():
     # Configuration - All directory and file paths in one place
     INPUT_CSV_FILE = "search_these.csv"
-    OUTPUT_DIRECTORY = "scrape_results"
+    OUTPUT_DIRECTORY = "./local_data/scrape_results"
     
     # Load environment variables from .env file
     load_dotenv()
